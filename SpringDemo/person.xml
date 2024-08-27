@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:util="http://www.springframework.org/schema/util" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd"> <!-- bean definitions here -->
+
+ 
+ <bean id="person" class="com.pack.Person">
+	 	<constructor-arg index="0" type="java.lang.Integer" value="101"/>
+	 	<constructor-arg index="1" type="java.lang.String" value="Ram"/>
+	 	<constructor-arg index="2" ref="address1"/>
+
+	 	
+	 </bean>
+	 
+	 <bean id="address1" class="com.pack.Address">
+	 	<constructor-arg index="0" type="java.lang.Integer" value="901"/>
+	 	<constructor-arg index="1" type="java.lang.String" value="Pune"/>
+	 	<constructor-arg index="2" type="java.lang.String" value="India"/>
+
+	 </bean>
+	 
+	 <bean id="address2" class="com.pack.Address">
+	 	<constructor-arg index="0" type="java.lang.Integer" value="902"/>
+	 	<constructor-arg index="1" type="java.lang.String" value="NYC"/>
+	 	<constructor-arg index="2" type="java.lang.String" value="USA"/>
+
+	 </bean>
+
+
+</beans>

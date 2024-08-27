@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:util="http://www.springframework.org/schema/util" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd"> <!-- bean definitions here -->
+
+	<bean id="collections" class="com.pack.InjectCollection">
+		
+		<property name="list">
+			<list>
+				<value>Ram</value>
+				<value>Sam</value>
+				<value>Tam</value>
+				<value>Dam</value>
+			</list>
+		</property>
+	
+		<property name="set">
+			<set>
+				<value>India</value>
+				<value>Bangladesh</value>
+				<value>Nepal</value>
+				<value>SriLanka</value>
+				<value>Bhutan</value>
+			</set>
+		
+		
+		</property>
+	
+		<property name="map">
+			<map>
+				<entry key="1" value="USA"/>
+				<entry key="2" value="Russia"/>
+				<entry key="3" value="China"/>
+				<entry key="4" value="India"/>
+		
+		
+		
+			</map>
+		</property>
+		
+		
+		<property name="props">
+			<props>
+				<prop key="one">Male</prop>
+				<prop key="two">Female</prop>
+				<prop key="three">Others</prop>
+			</props>
+			
+			
+		</property>
+	
+	</bean>
+
+	 
+
+
+</beans>
